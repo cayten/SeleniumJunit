@@ -14,7 +14,7 @@ import utilities.TestBaseBeforeAfter;
             //Dosyasec butonuna basalim
             WebElement dosyaSec = driver.findElement(By.xpath("//*[@id='file-upload']"));
             //Yuklemek istediginiz dosyayi secelim.
-            String yuklenecekDosya="C:\\Users\\Ramazan\\Desktop\\coverletter.pdf";
+            String yuklenecekDosya="\"C:\\Users\\CCS\\OneDrive\\Masaüstü\\foto.jpg\"";
             dosyaSec.sendKeys(yuklenecekDosya);
             //Upload butonuna basalim.
             driver.findElement(By.xpath("//*[@id='file-submit']")).click();

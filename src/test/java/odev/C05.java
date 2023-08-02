@@ -80,13 +80,14 @@ public class C05 {
         Thread.sleep(2000);
 
         //Upload file
-       // driver.findElement(By.xpath("//*[@type='file']")).submit();
-        //Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@type='file']"));
+        String yuklenecekDosya="\"C:\\Users\\CCS\\OneDrive\\Masaüstü\\foto.jpg\"";
+        Thread.sleep(2000);
 
 
         //Click 'Submit' button
-        WebElement submit= driver.findElement(By.xpath("//*[@class='btn btn-primary pull-left submit_form']"));
-        submit.click();
+        driver.findElement(By.xpath("//*[@class='btn btn-primary pull-left submit_form']")).click();
+
         Thread.sleep(1000);
 
 
